@@ -3,6 +3,7 @@
 #include <QPen>
 #include <QBrush>
 #include <QFont>
+#include <QDebug>
 
 MyWidget::MyWidget(QWidget *parent) :
     QWidget(parent),
@@ -38,7 +39,7 @@ void MyWidget::paintEvent(QPaintEvent *)
 //    painter.setFont(font);
 //    painter.setPen(Qt::blue);
 //    painter.drawText(120, 80, tr("hhhhhhhhh"));
-
+    qDebug() << "11111111111111";
     QPainterPath Path;
     Path.addEllipse(100, 100, 50, 50);
     Path.lineTo(200, 200);
